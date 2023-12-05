@@ -102,11 +102,11 @@ public class ElectronicsTest extends BaseTest {
         Assert.assertEquals(actualMessage5, expectedMessage5, "Invalid Text");
         Thread.sleep(2000);
         //2.20 Fill the mandatory fields
-        registerPage.enterFirstName("Naren");
-        registerPage.enterLastName("Dhaduk");
-        registerPage.enterEmail("naren1989@gmail.com");
-        registerPage.enterPassword("naren9090");
-        registerPage.enterConfirmPassword("naren9090");
+        registerPage.enterFirstName("mona");
+        registerPage.enterLastName("lisa");
+        registerPage.enterEmail("monal1289@yahoo.com");
+        registerPage.enterPassword("moli1289");
+        registerPage.enterConfirmPassword("moli1289");
         //2.21 Click on “REGISTER” Button
         registerPage.clickOnRegisterButton();
         //2.22 Verify the message “Your registration completed”
@@ -123,8 +123,8 @@ public class ElectronicsTest extends BaseTest {
         Thread.sleep(5000);
         //Login again becacuse cart is empty
         shoppingCartPage.clickOnLogInButton();
-        signInPage.emailId("naren1989@gmail.com");
-        signInPage.password("naren9090");
+        signInPage.emailId("monal1289@yahoo.com");
+        signInPage.password("moli1289");
         signInPage.clickOnLogInButton();
         //2.25 click on checkbox “I agree with the terms of service”
         shoppingCartPage.clickOnAgreeWithTermsOfServiceBox();
@@ -149,7 +149,7 @@ public class ElectronicsTest extends BaseTest {
         paymentMethodPage.clickOnContinueButton();
         //2.34Fill all the details
         paymentInformationPage.selectCreditCardType("Visa");
-        paymentInformationPage.enterCardHolderName("Naren Dhaduk");
+        paymentInformationPage.enterCardHolderName("mona lisa");
         paymentInformationPage.enterCardNumber("5368392055488809");
         paymentInformationPage.selectExpiryMonth("07");
         paymentInformationPage.selectExpiryYear("2026");
